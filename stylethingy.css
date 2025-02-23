@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+            
+            h1 {
+                font-family: 'PT Serif';
+                font-size: 150%;
+                font-weight: 100;
+                text-align: center;
+            }
+            h2 {
+                font-family: 'PT Serif';
+                font-size: 100%;
+                font-weight: 100;
+                text-align: center;
+                
+            }
+            h3 {
+              font-family: 'Lato', sans-serif;
+              font-size: 200%;
+              
+              text-align: center;
+              
+          }
+            .topnav {
+                overflow: hidden;
+                background-color: azure;
+            }
+            .topnav a {
+                float: left;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: 'Lato', sans-serif;
+            }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active {
+  
+            color: blue;
+            }
+            .column {
+            flex: 1; /* Equal width columns */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            
+        }
+            .center{
+                display: flex;
+                justify-content: center;
+            }
+            .content {
+              flex-grow: 1; /* Allow content to take up remaining space */
+              display: flex;
+              flex-direction: column;
+              gap: 20px; /* Add spacing between inner elements */
+          }
+            .mainContainer {
+              display: flex;
+            flex-direction: column;
+            width: 750px; /* Width of the box */
+            height: 500px; /* Height of the box */
+            border: 2px solid #000; /* Border size and color */
+            padding: 10px; /* Inner spacing inside the box */
+            margin: 20px auto; /* Center horizontally (auto works with a width set) */
+            text-align: center; /* Centers text inside the box */
+            border-radius: 25px
+            }
+            .mainContainer p{
+              text-align: center;
+              margin-top: auto; /* Push the <p> to the bottom */
+              padding: 10px 0;
+              }
+            
+            .progress-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 80%;
+      margin: 20px auto;
+      height: 40px;
+      background-color: #333;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .progress-container {
+      position: relative;
+      width: 80%; /* Adjust width as needed */
+      height: 40px; /* Height of the progress bar */
+      margin: 20px auto; /* Center it */
+      background-color: #c0c0c0; /* Background of the container */
+      border-radius: 20px; /* Rounded corners */
+      overflow: hidden; /* Ensure no overflow outside container */
+    }
+    
+    :root {
+      --blueBar: 50%;
+      --redBar: 50%;
+    }
+    .blue-bar {
+      background-color: #3b82f6; /* Blue color */
+      height: 100%; /* Full height */
+      width: var(--blueBar); /* Adjust percentage to represent progress */
+    }
+    .red-bar {
+      background-color: #ef4444; /* Red color */
+      height: 100%; /* Full height */
+      width: var(--redBar); /* Adjust percentage to represent progress */
+      float: right; /* Align to the right */
+    }
+
+    .marker {
+      z-index: 5;
+      width: 1%; /* Thin marker line */
+      height: 100%;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      box-shadow: none;
+      opacity: 1;
+    }
+    .marker-text {
+      position: absolute;
+      left: calc(50% - 20px); /* Center the text */
+      top: -20px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+    }
+    .label {
+      position: absolute;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+    }
+    .blue-label {
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .red-label {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .voteContainer {
+      position: relative;
+      width: 60%; /* Adjust width as needed */
+      height: 20px;
+      margin: 20px auto;
+      
+      
+    }
+    .blue-votes {
+      
+      color: #3b82f6;
+      float: left;
+      font-family: "Lato"
+    }
+    .red-votes {
+      color: #ef4444;
+      float: right;
+      font-family: "Lato"
+
+      
+    }
+    .buttonContainer {
+       width: 60%; 
+       height: 20px;
+       margin: 20px auto;
+    }
+    .blueVoteButton {
+        float: left;
+        border-radius: 12px;
+        padding: 15px 32px;
+        border: none;
+        
+        color:#3b82f6;
+    }
+    .blueVoteButton:hover {
+      float: left;
+      border-radius: 12px;
+      padding: 15px 32px;
+      border: none;
+      background-color: #94b0df;
+      color:#ffffff;
+  }
+    .redVoteButton {
+        float: right;
+        border-radius: 12px;
+        padding: 15px 32px;
+        border: none;
+        
+        color:#ef4444
+    }
+    .redVoteButton:hover {
+      float: right;
+      border-radius: 12px;
+      padding: 15px 32px;
+      border: none;
+      background-color: #f18b8b;
+      color:#ffffff
+  }
